@@ -7,6 +7,7 @@ import { UseGlobelContext } from "../../context/FunctionAlContext";
 //
 
 const Home = () => {
+  console.log("render");
   const { posts } = UseGlobelContext();
   const [searchTerm, setSearchTerm] = useState("");
   const [resultSearch, setResultSearch] = useState([]);
