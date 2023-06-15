@@ -20,7 +20,9 @@ const FunctionAlContext = ({ children }) => {
     localStorage.setItem("profile", JSON.stringify(user));
   }, [user]);
 
-  const URL = "http://localhost:5000/api";
+  // const URL = "http://localhost:5000/api";
+  const URL = "https://mern-stack-memories.onrender.com/api";
+
   const token = `Bearer ${user?.token}`;
 
   // for get posts pagination

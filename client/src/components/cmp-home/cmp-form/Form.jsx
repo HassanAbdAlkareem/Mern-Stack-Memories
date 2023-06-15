@@ -160,6 +160,7 @@ const Form = () => {
             {error && (
               <p className="create-error">You must enter the information!</p>
             )}
+
             {currentPost && (
               <button
                 onClick={() => (clearInput(), setCurrentPost(null))}
